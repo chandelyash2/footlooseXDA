@@ -1,11 +1,6 @@
 .layoutConatiner {
 }
-.headerWrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
+
 .headerContainer {
   position: absolute;
   width: 100vw;
@@ -15,10 +10,25 @@
 .headerContainer1 {
   position: fixed;
   width: 100vw;
-  background-color: rgb(37, 37, 114);
+  background-color: rgb(14, 14, 88);
   z-index: 2;
 }
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 
-.hedaerLogo {
-  margin: 5px;
+  color: white;
+}
+.headerLogo {
+  display: flex;
+
+  margin-left: 40px;
+}
+.headerContent {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
