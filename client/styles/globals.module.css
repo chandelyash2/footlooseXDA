@@ -1,0 +1,24 @@
+.layoutConatiner {
+}
+.headerWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.headerContainer {
+  position: absolute;
+  width: 100vw;
+  background-color: transparent;
+  z-index: 2;
+}
+.headerContainer1 {
+  position: fixed;
+  width: 100vw;
+  background-color: rgb(37, 37, 114);
+  z-index: 2;
+}
+
+.hedaerLogo {
+  margin: 5px;
+}

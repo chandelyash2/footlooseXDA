@@ -1,8 +1,28 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-
+import type { AppProps } from 'next/app';
+import { useState, useEffect } from 'react';
+import { WindowScroll } from '../context/index';
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  useEffect(() => {
+    const listenScrollEvent = () => {
+      if (window.scrollY < 40) {
+        setWindowScroll(false);
+      } else {
+        setWindowScroll(true);
+      }
+    };
+
+    window.addEventListener('scroll', listenScrollEvent);
+  }, []);
+
+  const [windowScroll, setWindowScroll] = useState(false);
+
+
+  return (
+    <WindowScroll.Provider value={windowScroll}>
+      <Component {...pageProps} />
+    </WindowScroll.Provider>
+
+  )
 }
 
-export default MyApp 
+export default MyApp;
