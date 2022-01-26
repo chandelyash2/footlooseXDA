@@ -10,25 +10,37 @@
 .headerContainer1 {
   position: fixed;
   width: 100vw;
-  background-color: rgb(14, 14, 88);
+  background-color: white;
   z-index: 2;
 }
 .headerWrapper {
   display: flex;
   flex-direction: row;
   width: 100%;
-
+  margin: 14px;
   color: white;
+  justify-content: space-around;
 }
-.headerLogo {
-  display: flex;
 
-  margin-left: 40px;
-}
 .headerContent {
   display: flex;
-
+  color: black;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center; */
+  justify-content: space-around;
 }
+.headerContentText{
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+.headerContentText1{
+  color: black;
+  cursor: pointer;  
+  text-align: center;
+}
+.headerContentText:hover,
+.headerContentText1:hover{
+color: rgb(148, 116, 57);
+}
+

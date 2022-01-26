@@ -8,17 +8,22 @@
   height: 100%;
 }
 .background {
-  background-image: url('https://anywhereweroam.com/wp-content/uploads/2020/06/uk-travel-blog-awr-1.jpg');
+  background-image: url("../public/Snowy.jpeg");
   background-repeat: no-repeat;
   background-position: center center;
   /* background-attachment: scroll; */
   background-size: cover;
   width: 100vw;
-  height: 650px;
-  z-index: 1;
+  height: 900px;
+  z-index: 2;
 }
 .img{
-  position: absolute;
-  top:500px ;
-  z-index: 1;
+ display: flex;
+ width: 100%;
+ height: 950px;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ color: white;
+
 }
